@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct ChallengeEclipseWorksApp: App {
+    @StateObject private var settingsViewModel = SettingsViewModel()
 
     var body: some Scene {
         WindowGroup {
             APODView()
+                .environmentObject(settingsViewModel)
+                .preferredColorScheme(settingsViewModel.colorScheme) 
         }
     }
 }

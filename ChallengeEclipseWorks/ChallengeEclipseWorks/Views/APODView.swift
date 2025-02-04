@@ -43,10 +43,20 @@ struct APODView: View {
             }
             .navigationTitle("APOD NASA")
             .toolbar {
-                NavigationLink {
-                    FavoritesView()
-                } label: {
-                    Label("Favoritos", systemImage: "heart.fill")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        SettingsView()
+                    } label: {
+                        Image(systemName: "gearshape")
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        FavoritesView()
+                    } label: {
+                        Label("Favoritos", systemImage: "heart.fill")
+                    }
                 }
             }
             .task {
