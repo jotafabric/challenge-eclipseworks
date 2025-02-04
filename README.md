@@ -16,7 +16,6 @@
 
 - Persistência: Favoritos entre sessões com FileManager.
 - Sincronização: Sincronizar favoritos entre dispositivos com CloudKit.
-- Testes: Testes unitários para o FavoritesViewModel.
 
 ## Screen Shots
 
