@@ -9,11 +9,10 @@ import SwiftUI
 
 @main
 struct ChallengeEclipseWorksApp: App {
-    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            APODView()
         }
     }
 }
